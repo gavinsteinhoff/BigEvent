@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -50,20 +50,48 @@
             </div>
         </div>
 
-        <div id="main" class="text-center row">
-            <div class="col">
-                <div class="mx-5">
-                    <h1 class="header washburn-blue stroke-white">The Big Event</h1>
-                    <h1 class="sub-header washburn-blue stroke-white">April 14th</h1>
+        <div id="main" class="row">
+            <div class="col-12 text-center">
+                <h1 class="header text-white">About The Big Event</h1>
+                <h3 class="font-weight-normal text-white">Making a difference in Topeka and nationwide. The BIG Event was
+                    established in 2012 and has Service, Growth, Inclusion, and Connection at its core to. We are students,
+                    friends, and your neighbors coming together to make a difference in the lives of our friends and neighbors.</h3>
+                <div class="row p-5">
+                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded">
+                        <h1 class="sub-header text-center">Service</h1>
+                        <div class="bg-white w-100" style="height:1px"></div>
+                        <p class="ml-5 mr-5">It makes sense that we have service as one of the core values of this organization,
+                            at the end of the day this is what we want all of our participants to walk away with and to remember.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-12 py-3"></div>
+                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded">
+                        <h1 class="sub-header text-center">Inclusion</h1>
+                        <div class="bg-white w-100" style="height:1px"></div>
+                        <p class="ml-5 mr-5">We want all students from any background to feel as though they can make a difference
+                            in the lives of those around them, this is why we include as many people as we can to help.</p>
+                    </div>
                 </div>
-                <h3 class="font-weight-normal text-white stroke-black pt-5">It’s what we do together that will set us apart
-                    The BIG Event was established in 2012 at Washburn University and has seen the good a community can do
-                    for others around them.
-                </h3>
+                <div class="row p-5">
+                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded">
+                        <h1 class="sub-header text-center">Growth</h1>
+                        <div class="bg-white w-100" style="height:1px"></div>
+                        <p class="ml-5 mr-5">We love to give to our community, but we want to give back in a way that will
+                            help you come back year after year. We initiate change in the heart of our volunteers as they
+                            grow as leaders, friends, and neighbors.</p>
+                    </div>
+                    <div class="col-lg-2 col-md-12 py-3"></div>
+                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded">
+                        <h1 class="sub-header text-center">Connection</h1>
+                        <div class="bg-white w-100" style="height:1px"></div>
+                        <p class="ml-5 mr-5">You leave things better than you find them when you feel connected to the organizations
+                            you will help. The most change happens when you do things from the heart.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="row">
-            <div class="col" style="height:600px"></div>
+            <div class="col" style="height:150px"></div>
         </div>
 
 
@@ -106,17 +134,28 @@
 
         <style>
             body {
-                background-image: url("http://students.washburn.edu/organizations/thebigevent/img/about/aboutBackround1.png");
+                background-image: url("https://static1.squarespace.com/static/54acac2ce4b07985e3837866/t/588517b4197aea49bd525ed1/1485117418793/Washburn+Lincoln+Hall-Exterior+Final-6.jpg?format=2500w");
                 background-repeat: no-repeat;
                 background-position-x: center;
+                background-position-y: -300px;
                 height: 1280px;
             }
 
+            @media only screen and (max-width: 992px) {
+                body {
+                    background-position-y: 0px;
+                }
+            }
+
+            /* -webkit-filter: opacity(50%);
+                -moz-filter: opacity(50%);
+                -o-filter: opacity(50%);
+                -ms-filter: opacity(50%);
+                filter: opacity(50%);
+         */
             /* [class^="col"] {
                 border: 1px solid red;
             } */
-
-            
         </style>
 
         <!-- Optional JavaScript -->
@@ -153,8 +192,8 @@
                         $("#nav").addClass("navbar-dark");
                     }
                     if (scrollTop == 0) {
-                        $("#nav").removeClass("navbar-dark");
-                        $("#nav").addClass("navbar-light");
+                        $("#nav").removeClass("navbar-light");
+                        $("#nav").addClass("navbar-dark");
                         $("#nav").removeClass("border-bottom border-white");
                     }
                 }
