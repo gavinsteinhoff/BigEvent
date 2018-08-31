@@ -133,7 +133,7 @@
         font-size: 2.5rem;
         padding-top: 0%;
     }
-    footer .center {
+    .center-sm {
         text-align: center;
     }
     footer [class^="col"] {
