@@ -1,13 +1,16 @@
 html, body {
     min-height: 100%;
 }
-
+body {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 #nav .navbar-nav {
     align-items: center;
 }
 
-#main {
+#desktop {
     padding-top: 250px;
 }
 
@@ -63,13 +66,16 @@ html, body {
 
 
 .about__header {
-    width: 95px; 
-    height: 95px;
+    width: 200px; 
+    height: 200px;
     background-color: var(--primary-2-color);
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primary-1-color)
+}
+.about__desc {
+    font-size: 25px;
 }
 
 @media only screen and (min-width: 993px) {
@@ -93,6 +99,10 @@ html, body {
     #mobile {
         display: block;
         padding-top: 60px !important;
+    }
+    .about__header {
+        width: 95px; 
+        height: 95px;
     }
     body {
         background-image: linear-gradient(var(--primary-3-color), var(--primary-1-color));
