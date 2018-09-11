@@ -61,6 +61,17 @@ html, body {
     width: 100%;
 }
 
+
+.about__header {
+    width: 95px; 
+    height: 95px;
+    background-color: var(--primary-2-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-1-color)
+}
+
 @media only screen and (min-width: 993px) {
     #mobile {
         display: none;
@@ -84,7 +95,7 @@ html, body {
         padding-top: 60px !important;
     }
     body {
-        background-image: linear-gradient(var(--primary-2-color), var(--primary-3-color));
+        background-image: linear-gradient(var(--primary-3-color), var(--primary-1-color));
     }
     #nav {
         background-color: var(--primary-1-color) !important;

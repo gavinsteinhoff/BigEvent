@@ -12,14 +12,25 @@
     color: #003A70;
 }
 
+.text-primary-1 {
+    color: var(--primary-1-color);
+}
+.text-primary-2 {
+    color: var(--primary-2-color);
+}
+.text-primary-3 {
+    color: var(--primary-3-color);
+}
+.text-primary-4 {
+    color: var(--primary-4-color);
+}
+
 .bg-primary-1 {
     background-color: var(--primary-1-color);
 }
-
 .bg-primary-2 {
     background-color: var(--primary-2-color);
 }
-
 .bg-primary-3 {
     background-color: var(--primary-3-color);
 }
@@ -27,7 +38,6 @@
 .stroke-white {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
-
 .stroke-black {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
