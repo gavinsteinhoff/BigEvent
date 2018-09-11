@@ -8,6 +8,10 @@
     --secondary-2-color: #F28B00;
 }
 
+html {
+    height: 100%;
+}
+
 .washburn-blue {
     color: #003A70;
 }
@@ -24,7 +28,6 @@
     background-color: var(--primary-3-color);
 }
 
-
 .stroke-white {
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
@@ -33,23 +36,6 @@
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #nav .navbar-nav {
     align-items: center;
 }
@@ -57,7 +43,6 @@
 #main {
     padding-top: 250px;
 }
-
 
 .header {
     font-size: 6rem;
@@ -109,23 +94,42 @@
     width: 100%;
 }
 
+@media only screen and (min-width: 993px) {
+    #mobile {
+        display: none;
+    }
+    body {
+        background-image: url("http://students.washburn.edu/organizations/thebigevent/img/about/aboutBackround1.png");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        height: 1280px;
+    }
+}
+
 /* Below Medium */
+
 @media only screen and (max-width: 992px) {
-    #main {
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
         padding-top: 60px !important;
+    }
+    body {
+        background-image: linear-gradient(var(--primary-3-color), var(--primary-2-color));
+        height: 100%;
     }
     #nav {
         background-color: var(--primary-1-color) !important;
+        border-bottom: 3px solid white;
     }
     #nav .navbar-nav {
         align-items: start;
     }
-    #nav .nav-link,
-    #nav .navbar-brand,
-    #nav .navbar-toggler-icon {
+    #nav .nav-link, #nav .navbar-brand, #nav .navbar-toggler-icon {
         color: white !important;
     }
-
     .header {
         font-size: 3rem;
     }
@@ -135,8 +139,5 @@
     }
     .center-sm {
         text-align: center;
-    }
-    footer [class^="col"] {
-        padding-bottom: 2rem;
     }
 }
