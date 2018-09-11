@@ -1,0 +1,33 @@
+:root {
+    --primary-1-color: #003A70;
+    --primary-2-color: #A3C8E3;
+    --primary-3-color: #608EB5;
+    --primary-4-color: #ECAA00;
+    --primary-5-color: #B5ADA6;
+    --secondary-1-color: #799A05;
+    --secondary-2-color: #F28B00;
+}
+
+.washburn-blue {
+    color: #003A70;
+}
+
+.bg-primary-1 {
+    background-color: var(--primary-1-color);
+}
+
+.bg-primary-2 {
+    background-color: var(--primary-2-color);
+}
+
+.bg-primary-3 {
+    background-color: var(--primary-3-color);
+}
+
+.stroke-white {
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.stroke-black {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}

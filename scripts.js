@@ -30,4 +30,6 @@ $(window).on("scroll", function () {
 
 $(function () {
     amountscrolled();
+    var viewportHeight = $(document).height();
+    $("#mobile > footer").css("padding-top", viewportHeight -  parseInt($("#mobile").css("height")));
 });

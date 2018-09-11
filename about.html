@@ -16,6 +16,7 @@
 
 
     <link href="./style.css" rel="stylesheet">
+    <link href="./utils.css" rel="stylesheet">
     <title>Hello, world!</title>
     <link href="https://washburn.edu/_redesign2018/_files/images/template/favicon-32x32.png" rel="icon">
 </head>
@@ -24,8 +25,8 @@
     <div class="container-fluid">
         <div class="fixed-top navbar navbar-expand-lg navbar-dark" id="nav">
             <a class="navbar-brand d-lg-none" href="./index.html">The Big Event</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-large-flex justify-content-center" id="navbarSupportedContent">
@@ -37,8 +38,8 @@
                         <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item px-2 d-none d-lg-block">
-                        <img id="logo" src="http://students.washburn.edu/organizations/thebigevent/img/WBE%20Logo.png" width="150" height="200" class="nav-link"
-                            href="#" />
+                        <img id="logo" src="http://students.washburn.edu/organizations/thebigevent/img/WBE%20Logo.png"
+                            width="150" height="200" class="nav-link" href="#" />
                     </li>
                     <li class="nav-item pr-4">
                         <a class="nav-link" href="#">Sign Up</a>
@@ -50,113 +51,93 @@
             </div>
         </div>
 
-        <div id="main" class="row">
-            <div class="col-12 text-center">
-                <h1 class="header" style="color:var(--primary-2-color)">About The Big Event</h1>
-                <h3 class="font-weight-normal text-white">Making a difference in Topeka and nationwide. The BIG Event was
-                    established in 2012 and has Service, Growth, Inclusion, and Connection at its core to. We are students,
-                    friends, and your neighbors coming together to make a difference in the lives of our friends and neighbors.</h3>
-                <div class="row p-5">
-                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded border-white border">
-                        <h1 class="sub-header text-center">Service</h1>
-                        <div class="bg-white w-100" style="height:1px"></div>
-                        <p class="ml-5 mr-5">It makes sense that we have service as one of the core values of this organization,
-                            at the end of the day this is what we want all of our participants to walk away with and to remember.</p>
+        <div id="desktop">
+            <div id="main" class="text-center row">
+                <div class="col">
+                    <div class="mx-5">
+                        <h1 class="header washburn-blue stroke-white">The Big Event</h1>
+                        <h1 class="sub-header washburn-blue stroke-white">April 14th</h1>
                     </div>
-                    <div class="col-lg-2 col-md-12 py-3"></div>
-                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded">
-                        <h1 class="sub-header text-center">Inclusion</h1>
-                        <div class="bg-white w-100" style="height:1px"></div>
-                        <p class="ml-5 mr-5">We want all students from any background to feel as though they can make a difference
-                            in the lives of those around them, this is why we include as many people as we can to help.</p>
-                    </div>
-                </div>
-                <div class="row p-5">
-                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded">
-                        <h1 class="sub-header text-center">Growth</h1>
-                        <div class="bg-white w-100" style="height:1px"></div>
-                        <p class="ml-5 mr-5">We love to give to our community, but we want to give back in a way that will
-                            help you come back year after year. We initiate change in the heart of our volunteers as they
-                            grow as leaders, friends, and neighbors.</p>
-                    </div>
-                    <div class="col-lg-2 col-md-12 py-3"></div>
-                    <div class="col-lg-5 col-md-12 bg-primary-3 text-white rounded">
-                        <h1 class="sub-header text-center">Connection</h1>
-                        <div class="bg-white w-100" style="height:1px"></div>
-                        <p class="ml-5 mr-5">You leave things better than you find them when you feel connected to the organizations
-                            you will help. The most change happens when you do things from the heart.</p>
-                    </div>
+                    <h3 class="font-weight-normal text-white stroke-black pt-5">It’s what we do together that will set
+                        us apart The BIG Event was established in 2012 at Washburn University and has seen the good a
+                        community can do for others around them.
+                    </h3>
                 </div>
             </div>
+            <div class="row">
+                <div class="col" style="height:600px"></div>
+            </div>
+
+            <footer class="footer bg-primary-1 text-white py-4 border-top border-white row">
+                <div class="col-md-12 col-lg-2 center-sm">
+                    <h4>Washburn's Big Event</h4>
+                </div>
+                <div class="col-md-12 col-lg-4 center-sm">
+                    <div class="link-list">
+                        <a href="#">Home</a> |
+                        <a href="#">About</a> |
+                        <a href="#">Sign Up</a> |
+                        <a href="#">Committee</a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="d-flex flex-row">
+                        <span class="fas fa-phone pr-3 d-flex align-items-center"></span>
+                        <span>(785) 123 - 4567</span>
+                    </div>
+                    <div class="d-flex flex-row py-2">
+                        <span class="fas fa-envelope pr-3 d-flex align-items-center"></span>
+                        <span>somthing@washburn.edu</span>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <span class="fas fa-map-marker-alt pr-3 d-flex align-items-center" style="width:32px"></span>
+                        <span>Lower Level, Memorial Union <br /> 1700 SW College Ave Topeka, KS 66621</span>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-2 link-list center-sm">
+                    <h6 class="d-flex align-items-center justify-content-center font-weight-light">Follow Us:
+                        <a class="rounded-circle icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="rounded-circle icon" href="#"><i class="fab fa-twitter"></i></a>
+                    </h6>
+                </div>
+
+                <div class="col pb-0"><small>Gavin Steinhoff <i class="fas fa-copyright"></i> 2018</small></div>
+            </footer>
+
         </div>
 
-        <div class="row">
-            <div class="col" style="height:150px"></div>
+        <div id="mobile">
+            <div class="d-flex justify-content-center w-100">
+                <img id="logo" src="http://students.washburn.edu/organizations/thebigevent/img/WBE%20Logo.png" width="157"
+                    height="203" class="nav-link" href="#" />
+            </div>
+            <h4 class="font-weight-light text-justify pt-1 text-white">
+                It’s what we do together that will set us apart The BIG Event was established
+                in 2012 at Washburn University and has seen the good a community can do for others around them.
+            </h4>
+
+            <footer class="fixed-bottom p-3">
+                <div class="row pt-3">
+                    <div class="col-6">
+                        <a class="btn btn-outline-light bg-primary-2 btn-block" href="./signup" role="button">Sign Up</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="btn btn-outline-light bg-primary-2 btn-block" href="./host" role="button">Host a Site</a>
+                    </div>
+                </div>
+                <div class="row pt-1">
+                    <div class="col-6">
+                        <a class="btn btn-outline-light bg-primary-2 btn-block" href="./about.html" role="button">About
+                            Big Event</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="btn btn-outline-light bg-primary-2 btn-block" href="./commitee" role="button">Committee</a>
+                    </div>
+                </div>
+            </footer>
         </div>
 
-
-        <footer class="footer bg-primary-1 text-white py-4 border-top border-white row">
-            <div class="col-md-12 col-lg-2">
-                <h4>Washburn's Big Event</h4>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="link-list">
-                    <a href="#">Home</a> |
-                    <a href="#">About</a> |
-                    <a href="#">Sign Up</a> |
-                    <a href="#">Committee</a>
-                </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="d-flex flex-row">
-                    <span class="fas fa-phone pr-3 d-flex align-items-center"></span>
-                    <span>(785) 123 - 4567</span>
-                </div>
-                <div class="d-flex flex-row py-2">
-                    <span class="fas fa-envelope pr-3 d-flex align-items-center"></span>
-                    <span>somthing@washburn.edu</span>
-                </div>
-                <div class="d-flex flex-row">
-                    <span class="fas fa-map-marker-alt pr-3 d-flex align-items-center" style="width:32px"></span>
-                    <span>Lower Level, Memorial Union <br/> 1700 SW College Ave Topeka, KS 66621</span>
-                </div>
-            </div>
-
-            <div class="col-md-12 col-lg-2 link-list">
-                <h6 class="d-flex align-items-center justify-content-center font-weight-light">Follow Us:
-                    <a class="rounded-circle icon" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="rounded-circle icon" href="#"><i class="fab fa-twitter"></i></a>
-                </h6>
-            </div>
-
-            <div class="col pb-0"><small>Gavin Steinhoff <i class="fas fa-copyright"></i> 2018</small></div>
-        </footer>
-
-        <style>
-            body {
-                background-image: url("https://static1.squarespace.com/static/54acac2ce4b07985e3837866/t/588517b4197aea49bd525ed1/1485117418793/Washburn+Lincoln+Hall-Exterior+Final-6.jpg?format=2500w");
-                background-repeat: no-repeat;
-                background-position-x: center;
-                background-position-y: -300px;
-                height: 1280px;
-            }
-
-            @media only screen and (max-width: 992px) {
-                body {
-                    background-position-y: 0px;
-                }
-            }
-
-            /* -webkit-filter: opacity(50%);
-                -moz-filter: opacity(50%);
-                -o-filter: opacity(50%);
-                -ms-filter: opacity(50%);
-                filter: opacity(50%);
-         */
-            /* [class^="col"] {
-                border: 1px solid red;
-            } */
-        </style>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -170,53 +151,8 @@
         <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 
-        <script>
+        <script src="./scripts.js"></script>
 
-            function amountscrolled() {
-                if ($(window).width() > 992) {
-                    var scrollTop = $(window).scrollTop();
-                    if (scrollTop <= 500) {
-                        $("#logo").attr("width", 150 - scrollTop / 10);
-                        $("#logo").attr("height", 200 - scrollTop / 7);
-                        $("#nav").css("background-color", "rgb(0,58,112," + scrollTop / 250 + ")")
-                        if (scrollTop > 200) {
-                            $("#nav").removeClass("navbar-light");
-                            $("#nav").addClass("navbar-dark");
-                            $("#nav").addClass("border-bottom border-white");
-                        }
-                    } else {
-                        $("#logo").attr("width", 100);
-                        $("#logo").attr("height", 130);
-                        $("#nav").css("background-color", "rgb(0,58,112,1)")
-                        $("#nav").removeClass("navbar-light");
-                        $("#nav").addClass("navbar-dark");
-                    }
-                    if (scrollTop == 0) {
-                        $("#nav").removeClass("navbar-light");
-                        $("#nav").addClass("navbar-dark");
-                        $("#nav").removeClass("border-bottom border-white");
-                    }
-                }
-            }
-            $(window).on("scroll", function () {
-                amountscrolled()
-            })
-
-            $(function () {
-                amountscrolled();
-            });
-
-
-
-
-
-
-
-
-
-
-
-        </script>
     </div>
 </body>
 
