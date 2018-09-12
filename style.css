@@ -138,7 +138,7 @@ body {
     }
     body {
         background-image: linear-gradient(rgba(var(--primary-3-color)), rgba(var(--primary-1-color)));
-        padding-left: 1em;
+        padding-left: 0em;
         padding-right: 1em;
     }
     #nav {
