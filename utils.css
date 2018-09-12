@@ -13,26 +13,26 @@
 }
 
 .text-primary-1 {
-    color: var(--primary-1-color);
+    color: rgba(var(--primary-1-color));
 }
 .text-primary-2 {
-    color: var(--primary-2-color);
+    color: rgba(var(--primary-2-color));
 }
 .text-primary-3 {
-    color: var(--primary-3-color);
+    color: rgba(var(--primary-3-color));
 }
 .text-primary-4 {
-    color: var(--primary-4-color);
+    color: rgba(var(--primary-4-color));
 }
 
 .bg-primary-1 {
-    background-color: var(--primary-1-color);
+    background-color: rgba(var(--primary-1-color));
 }
 .bg-primary-2 {
-    background-color: var(--primary-2-color);
+    background-color: rgba(var(--primary-2-color));
 }
 .bg-primary-3 {
-    background-color: var(--primary-3-color);
+    background-color: rgba(var(--primary-3-color));
 }
 
 .stroke-white {
