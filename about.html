@@ -53,15 +53,101 @@
 
         <div id="desktop">
             <div class="row pt-5">
-                <div class="about__header rounded-circle border border-dark">
-                    <span>Service</span>
+                <!-- <div class="d-flex flex-row">
+                    <div class="about__header rounded-circle border border-dark">
+                        <span>Service</span>
+                    </div>
+                    <span class="about__desc">
+                        It makes sense that we have service as one of the core values of this organization,
+                        at the end of the day this is what we want all of our participants to walk away with and to
+                        remember.</span>
+                </div> -->
+
+                <style type="text/css">
+                    .inner {
+                        position: absolute;
+                    }
+
+                    .outer {
+                        position: relative;
+                        width: 100%;
+                    }
+                </style>
+
+                <div class="outer">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="1 mr-5 about__header rounded-circle border border-dark">
+                            Service
+                        </div>
+                        <div class="2 mx-5 about__header rounded-circle border border-dark">
+                            Inclusion
+                        </div>
+                        <div class="3 mx-5 about__header rounded-circle border border-dark">
+                            Growth
+                        </div>
+                        <div class="4 ml-5 about__header rounded-circle border border-dark">
+                            Connection
+                        </div>
+                    </div>
+                    <div id="aboutDesc">
+                        <div class="inner about__desc">
+                            It makes sense that we have service as one of the core values of this organization,
+                            at the end of the day this is what we want all of our participants to walk away with and to
+                            remember.
+                        </div>
+                        <div class="inner about__desc">
+                            We want all students from any background to feel as though they can make a difference
+                            in the lives of those around them, this is why we include as many people as we can to help.
+                        </div>
+                        <div class="inner about__desc">
+                            We love to give to our community, but we want to give back in a way that will
+                            help you come back year after year. We initiate change in the heart of our volunteers as
+                            they
+                            grow as leaders, friends, and neighbors.
+                        </div>
+                        <div class="inner about__desc">
+                            You leave things better than you find them when you feel connected to the organizations
+                            you will help. The most change happens when you do things from the heart.
+                        </div>
+                    </div>
                 </div>
-                <span>It makes sense that we have service as one of the core values of this organization,
-                    at the end of the day this is what we want all of our participants to walk away with and to
-                    remember.</span>
-
             </div>
+            <footer class="footer bg-primary-1 text-white py-4 border-top border-white row">
+                <div class="col-md-12 col-lg-2 center-sm">
+                    <h4>Washburn's Big Event</h4>
+                </div>
+                <div class="col-md-12 col-lg-4 center-sm">
+                    <div class="link-list">
+                        <a href="#">Home</a> |
+                        <a href="#">About</a> |
+                        <a href="#">Sign Up</a> |
+                        <a href="#">Committee</a>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="d-flex flex-row">
+                        <span class="fas fa-phone pr-3 d-flex align-items-center"></span>
+                        <span>(785) 123 - 4567</span>
+                    </div>
+                    <div class="d-flex flex-row py-2">
+                        <span class="fas fa-envelope pr-3 d-flex align-items-center"></span>
+                        <span>somthing@washburn.edu</span>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <span class="fas fa-map-marker-alt pr-3 d-flex align-items-center" style="width:32px"></span>
+                        <span>Lower Level, Memorial Union <br /> 1700 SW College Ave Topeka, KS 66621</span>
+                    </div>
+                </div>
 
+                <div class="col-md-12 col-lg-2 link-list center-sm">
+                    <h6 class="d-flex align-items-center justify-content-center font-weight-light">Follow Us:
+                        <a class="rounded-circle icon" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="rounded-circle icon" href="#"><i class="fab fa-twitter"></i></a>
+                    </h6>
+                </div>
+
+                <div class="col pb-0"><small>Gavin Steinhoff <i class="fas fa-copyright"></i> 2018</small></div>
+            </footer>
         </div>
 
         <div id="mobile">
@@ -171,7 +257,21 @@
 
         <script src="./scripts.js"></script>
 
+        <script>
+            $(".about__header").hover(function () {
+                let number = ($(this).attr('class').split(" ")[0]);
+                $("#aboutDesc .inner:nth-child(" + number + ")").css("opacity", "1");
+                $(".about__header").css("animation-name", "null");
+            }, function () {
+                let number = ($(this).attr('class').split(" ")[0]);
+                $(".about__header").css("animation-name", "breath");
+                $("#aboutDesc .inner:nth-child(" + number + ")").css("opacity", "0");
+            })
+        </script>
 
+        <style>
+
+        </style>
 
     </div>
 </body>

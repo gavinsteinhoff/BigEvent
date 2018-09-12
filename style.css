@@ -1,9 +1,10 @@
 html, body {
     min-height: 100%;
 }
+
 body {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 
 #nav .navbar-nav {
@@ -34,7 +35,7 @@ body {
 
 .link-list a {
     text-decoration: none;
-    color: var(--primary-2-color);
+    color: rgba(var(--primary-2-color));
 }
 
 .link-list a:hover {
@@ -45,15 +46,15 @@ body {
     width: 30px;
     height: 30px;
     margin-left: .5rem;
-    border: 1px solid var(--primary-2-color);
+    border: 1px solid rgba(var(--primary-2-color));
 }
 
 .icon:hover {
-    background-color: var(--primary-2-color)
+    background-color: rgba(var(--primary-2-color))
 }
 
 .icon:hover i {
-    color: var(--primary-1-color);
+    color: rgba(var(--primary-1-color));
 }
 
 .icon i {
@@ -64,18 +65,47 @@ body {
     width: 100%;
 }
 
-
 .about__header {
-    width: 200px; 
-    height: 200px;
-    background-color: var(--primary-2-color);
+    height: 250px;
+    flex: 0 0 250px;
+    font-size: 3em;
+    background-color: rgba(var(--primary-2-color), .8);
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primary-1-color)
+    color: rgba(var(--primary-1-color));
+    padding-bottom: .5em;
+    cursor: pointer;
+    animation: duration 1s;
+    animation-name: breath;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
 }
+
+.about__header:hover {
+    background-color: rgba(var(--primary-3-color));
+     animation-name: null;
+    transform: scale(1.1);
+}
+
 .about__desc {
+    color: var(--primary-5-color);
+    opacity: 0;
     font-size: 25px;
+    margin-top: 3em;
+    padding: 1em;
+    background-color: rgba(var(--primary-2-color), 0.7);
+    border-radius: 25px;
+    transition-duration: 1s;
+}
+
+@keyframes breath {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 
 @media only screen and (min-width: 993px) {
@@ -101,14 +131,17 @@ body {
         padding-top: 60px !important;
     }
     .about__header {
-        width: 95px; 
+        width: 95px;
         height: 95px;
+        font-size: 1em;
     }
     body {
-        background-image: linear-gradient(var(--primary-3-color), var(--primary-1-color));
+        background-image: linear-gradient(rgba(var(--primary-3-color)), rgba(var(--primary-1-color)));
+        padding-left: 1em;
+        padding-right: 1em;
     }
     #nav {
-        background-color: var(--primary-1-color) !important;
+        background-color: rgba(var(--primary-1-color)) !important;
         border-bottom: 3px solid white;
     }
     #nav .navbar-nav {

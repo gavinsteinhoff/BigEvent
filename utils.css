@@ -1,11 +1,11 @@
 :root {
-    --primary-1-color: #003A70;
-    --primary-2-color: #A3C8E3;
-    --primary-3-color: #608EB5;
-    --primary-4-color: #ECAA00;
-    --primary-5-color: #B5ADA6;
-    --secondary-1-color: #799A05;
-    --secondary-2-color: #F28B00;
+    --primary-1-color: 0,58,112; 
+    --primary-2-color: 163,200,227;
+    --primary-3-color: 96,142,181;
+    --primary-4-color: 236,170,0;
+    --primary-5-color: 181,173,166;
+    --secondary-1-color: 121,154,5;
+    --secondary-2-color: 242,139,0;
 }
 
 .washburn-blue {
