@@ -24,6 +24,15 @@
 .text-primary-4 {
     color: rgba(var(--primary-4-color));
 }
+.text-primary-5 {
+    color: rgba(var(--primary-5-color));
+}
+.text-secondary-1 {
+    color: rgba(var(--secondary-1-color));
+}
+.text-secondary-2 {
+    color: rgba(var(--secondary-2-color));
+}
 
 .bg-primary-1 {
     background-color: rgba(var(--primary-1-color));

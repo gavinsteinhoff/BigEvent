@@ -2,13 +2,17 @@ html, body {
     min-height: 100%;
 }
 
-body {
+.content {
     padding-left: 5em;
     padding-right: 5em;
 }
 
 #nav .navbar-nav {
     align-items: center;
+}
+
+#logo {
+    margin: auto;
 }
 
 #desktop {
@@ -65,9 +69,29 @@ body {
     width: 100%;
 }
 
+.nav-item {
+    width: 150px;
+}
+
+.about__main__header {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    background-color: rgba(var(--primary-1-color), .5);
+    border-radius: 15px;
+    width: 75%;
+    margin: auto;
+    padding: 1em;
+}
+
 .about__header {
-    height: 250px;
+    border-radius: 15px;
+    height: 200px;
     flex: 0 0 250px;
+    border: 3px solid rgba(var(--primary-1-color));
     font-size: 3em;
     background-color: rgba(var(--primary-2-color), .8);
     display: flex;
@@ -76,10 +100,7 @@ body {
     color: rgba(var(--primary-1-color));
     padding-bottom: .5em;
     cursor: pointer;
-    animation: duration 1s;
-    animation-name: breath;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    margin: 0 20px 0 20px;
 }
 
 .about__header:hover {
@@ -90,6 +111,7 @@ body {
 
 .about__desc {
     color: var(--primary-5-color);
+    border: 3px solid rgba(var(--primary-1-color));
     opacity: 0;
     font-size: 25px;
     margin-top: 3em;
@@ -99,14 +121,8 @@ body {
     transition-duration: 1s;
 }
 
-@keyframes breath {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
+
+
 
 @media only screen and (min-width: 993px) {
     #mobile {
@@ -117,6 +133,18 @@ body {
         background-repeat: no-repeat;
         background-position-x: center;
         height: 1280px;
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .about__header {
+        height: 150px;
+        flex: 0 0 200px;
+        font-size: 2em;
+        margin: 0 10px 0 10px;
+    }
+    .about__main__header {
+        font-size: 1.5rem;
     }
 }
 

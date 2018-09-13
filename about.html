@@ -6,113 +6,127 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <meta property="og:title" content="About The Big Event" />
+    <meta property="og:description" content="Making a difference in Topeka and nationwide. The BIG Event was established in 2012 and has
+    Service, Growth, Inclusion, and Connection at its core to. We are students, friends, and your
+    neighbors coming together to make a difference in the lives of our friends and neighbors." />
+    <!-- <meta property="og:url" content="" /> -->
+    <meta property="og:image" content="http://students.washburn.edu/organizations/thebigevent/img/WBE%20Logo.png" />
+    <link rel="shortcut icon" href="https://washburn.edu/_redesign2018/_files/images/template/favicon-32x32.png" type="image/x-icon" />
+
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-
-
-
     <link href="./style.css?v=0.1" rel="stylesheet">
     <link href="./utils.css" rel="stylesheet">
+    <style>
+        body {
+        background-image: url('./images/stadium.jpg');
+        background-color: rgb(var(--primary-1-color));
+    }
+    </style>
     <title>Hello, world!</title>
     <link href="https://washburn.edu/_redesign2018/_files/images/template/favicon-32x32.png" rel="icon">
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="fixed-top navbar navbar-expand-lg navbar-dark" id="nav">
+        <div class="fixed-top navbar navbar-expand-lg navbar-light" id="nav">
             <a class="navbar-brand d-lg-none" href="./index.html">The Big Event</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-large-flex justify-content-center" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item pr-4">
+                <div class="navbar-nav d-flex text-center">
+                    <div class="nav-item">
                         <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
+                    </div>
+                    <div class="nav-item">
                         <a class="nav-link" href="./about.html">About</a>
-                    </li>
-                    <li class="nav-item px-2 d-none d-lg-block">
+                    </div>
+                    <div class="nav-item d-none d-lg-flex">
                         <img id="logo" src="http://students.washburn.edu/organizations/thebigevent/img/WBE%20Logo.png"
                             width="150" height="200" class="nav-link" href="#" />
-                    </li>
-                    <li class="nav-item pr-4">
+                    </div>
+                    <div class="nav-item">
                         <a class="nav-link" href="#">Sign Up</a>
-                    </li>
-                    <li class="nav-item">
+                    </div>
+                    <div class="nav-item">
                         <a class="nav-link" href="#">Committee</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div id="desktop">
-            <div class="row pt-5">
-                <!-- <div class="d-flex flex-row">
-                    <div class="about__header rounded-circle border border-dark">
-                        <span>Service</span>
-                    </div>
-                    <span class="about__desc">
-                        It makes sense that we have service as one of the core values of this organization,
-                        at the end of the day this is what we want all of our participants to walk away with and to
-                        remember.</span>
-                </div> -->
+            <div class="content">
+                <div class="about__main__header text-white border">
+                    Making a difference in Topeka and nationwide. The BIG Event was established in 2012 and has
+                    Service, Growth, Inclusion, and Connection at its core to. We are students, friends, and your
+                    neighbors coming together to make a difference in the lives of our friends and neighbors.
+                </div>
+                <div class="row pt-5">
+                    <style type="text/css">
+                        .inner {
+                            position: absolute;
+                        }
 
-                <style type="text/css">
-                    .inner {
-                        position: absolute;
-                    }
-
-                    .outer {
-                        position: relative;
-                        width: 100%;
-                    }
-                </style>
-
-                <div class="outer">
-                    <div class="d-flex flex-row justify-content-center">
-                        <div class="1 mr-5 about__header rounded-circle border border-dark">
-                            Service
+                        .outer {
+                            position: relative;
+                            width: 100%;
+                        }
+                    </style>
+                    <div class="outer">
+                        <div class="d-flex flex-row justify-content-center">
+                            <div class="1 about__header d-flex flex-column">
+                                <div><i class="far fa-heart text-danger"></i></div>
+                                <div>Service</div>
+                            </div>
+                            <div class="2 about__header d-flex flex-column">
+                                <div><i class="far fa-handshake"></i></div>
+                                <div>Inclusion</div>
+                            </div>
+                            <div class="3 about__header d-flex flex-column">
+                                <div><i class="fas fa-seedling text-secondary-1"></i></div>
+                                <div>Growth</div>
+                            </div>
+                            <div class="4 about__header d-flex flex-column">
+                                <div><i class="fas fa-globe text-primary-4"></i></div>
+                                <div>Connection</div>
+                            </div>
                         </div>
-                        <div class="2 mx-5 about__header rounded-circle border border-dark">
-                            Inclusion
-                        </div>
-                        <div class="3 mx-5 about__header rounded-circle border border-dark">
-                            Growth
-                        </div>
-                        <div class="4 ml-5 about__header rounded-circle border border-dark">
-                            Connection
-                        </div>
-                    </div>
-                    <div id="aboutDesc">
-                        <div class="inner about__desc">
-                            It makes sense that we have service as one of the core values of this organization,
-                            at the end of the day this is what we want all of our participants to walk away with and to
-                            remember.
-                        </div>
-                        <div class="inner about__desc">
-                            We want all students from any background to feel as though they can make a difference
-                            in the lives of those around them, this is why we include as many people as we can to help.
-                        </div>
-                        <div class="inner about__desc">
-                            We love to give to our community, but we want to give back in a way that will
-                            help you come back year after year. We initiate change in the heart of our volunteers as
-                            they
-                            grow as leaders, friends, and neighbors.
-                        </div>
-                        <div class="inner about__desc">
-                            You leave things better than you find them when you feel connected to the organizations
-                            you will help. The most change happens when you do things from the heart.
+                        <div id="aboutDesc">
+                            <div class="inner about__desc">
+                                It makes sense that we have service as one of the core values of this organization,
+                                at the end of the day this is what we want all of our participants to walk away with
+                                and to
+                                remember.
+                            </div>
+                            <div class="inner about__desc">
+                                We want all students from any background to feel as though they can make a difference
+                                in the lives of those around them, this is why we include as many people as we can to
+                                help.
+                            </div>
+                            <div class="inner about__desc">
+                                We love to give to our community, but we want to give back in a way that will
+                                help you come back year after year. We initiate change in the heart of our volunteers
+                                as
+                                they
+                                grow as leaders, friends, and neighbors.
+                            </div>
+                            <div class="inner about__desc">
+                                You leave things better than you find them when you feel connected to the organizations
+                                you will help. The most change happens when you do things from the heart.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <footer class="footer bg-primary-1 text-white py-4 border-top border-white row">
+            <footer class="footer bg-primary-1 text-white py-4 row footer__space">
                 <div class="col-md-12 col-lg-2 center-sm">
                     <h4>Washburn's Big Event</h4>
                 </div>
@@ -138,14 +152,12 @@
                         <span>Lower Level, Memorial Union <br /> 1700 SW College Ave Topeka, KS 66621</span>
                     </div>
                 </div>
-
                 <div class="col-md-12 col-lg-2 link-list center-sm">
                     <h6 class="d-flex align-items-center justify-content-center font-weight-light">Follow Us:
                         <a class="rounded-circle icon" href="#"><i class="fab fa-facebook-f"></i></a>
                         <a class="rounded-circle icon" href="#"><i class="fab fa-twitter"></i></a>
                     </h6>
                 </div>
-
                 <div class="col pb-0"><small>Gavin Steinhoff <i class="fas fa-copyright"></i> 2018</small></div>
             </footer>
         </div>
@@ -212,7 +224,7 @@
 
 
 
-            <footer class="pb-2">
+            <footer class="pb-2 bg-primary-1">
                 <hr />
                 <div class="row">
                     <div class="col-6">
@@ -261,10 +273,8 @@
             $(".about__header").hover(function () {
                 let number = ($(this).attr('class').split(" ")[0]);
                 $("#aboutDesc .inner:nth-child(" + number + ")").css("opacity", "1");
-                $(".about__header").css("animation-name", "null");
             }, function () {
                 let number = ($(this).attr('class').split(" ")[0]);
-                $(".about__header").css("animation-name", "breath");
                 $("#aboutDesc .inner:nth-child(" + number + ")").css("opacity", "0");
             })
         </script>
